@@ -18,16 +18,26 @@ public class Calculadora {
         double numeroA, numeroB;
         while (true) {
 
-            System.out.println("Digite uma opção: 1 - Soma, 2 - Subtracao, 3 - Multiplicacao, 4 - Divisao, 5 - Exponencial, 6 - Raiz Quadrada, 7 - Piso, 8 - Teto, 9 - Sair");
-            opcao = (int) scanner.nextFloat();
+            System.out.println("Digite uma opção: 1 - Soma, 2 - Subtracao, 3 - Multiplicacao, 4 - Divisao, 5 - Exponencial, 6 - Raiz Quadrada, 7 - Piso, 8 - Teto, 0 - Sair");
+
+            opcao = (int) scanner.nextDouble();
+
+
 
             if (opcao == 0)
                 break;
-            System.out.println("Digite o primeiro numero: ");
-            numeroA = scanner.nextFloat();
 
-            System.out.println("Digite o segundo numero: ");
-            numeroB = scanner.nextFloat();
+            if (opcao <6 ){
+
+                System.out.println("Digite o primeiro numero: ");
+                numeroA = scanner.nextDouble();
+                System.out.println("Digite o segundo numero: ");
+                numeroB = scanner.nextDouble();
+            } else {
+                System.out.println("Digite o numero: ");
+                numeroA = scanner.nextDouble();
+                numeroB = 0;
+            }
 
             switch (opcao) {
                 case 1:{
@@ -63,6 +73,7 @@ public class Calculadora {
                 }
                 case 7:{
                     System.out.println(Acoes.piso(numeroA));
+
 
                     break;
                 }
