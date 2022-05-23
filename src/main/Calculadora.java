@@ -49,7 +49,7 @@ public class Calculadora {
                 }
                 case 5:{
 
-                    System.out.println(Acoes.exponencial(numeroA));
+                    System.out.println(Acoes.exponencial(numeroA, numeroB));
 
                     break;
                 }
@@ -60,6 +60,11 @@ public class Calculadora {
                 }
                 case 7:{
                     System.out.println(Acoes.piso(numeroA));
+
+                    break;
+                }
+                case 8:{
+                    System.out.println(Acoes.teto(numeroA));
 
                     break;
                 }

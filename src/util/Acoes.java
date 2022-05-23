@@ -21,8 +21,8 @@ public class Acoes {
         return numeroA / numeroB;
     }
 
-    public static double exponencial(double numeroA){
-        return Math.pow(numeroA, 1.0/2);
+    public static double exponencial(double numeroA, double numeroB){
+        return Math.pow(numeroA, numeroB);
     }
 
     public static double raizQuadrada(double numeroA){
@@ -34,6 +34,9 @@ public class Acoes {
     }
     public static double piso(double numeroA){
         return Math.floor(numeroA);
+    }
+    public static double teto(double numeroA){
+        return Math.ceil(numeroA);
     }
 }
 
