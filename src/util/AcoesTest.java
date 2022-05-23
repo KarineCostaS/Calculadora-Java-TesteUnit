@@ -51,11 +51,11 @@ class AcoesTest {
 
     @Test
     void piso() {
-    assertEquals(3,acoesTeste.piso(3));
+    assertEquals(4,acoesTeste.piso(4.8));
     }
 
     @Test
     void teto() {
-        assertEquals(4, acoesTeste.teto(4));
+        assertEquals(6, acoesTeste.teto(5.9));
     }
 }

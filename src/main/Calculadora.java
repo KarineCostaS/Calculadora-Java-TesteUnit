@@ -2,6 +2,7 @@ package main;
 
 import util.Acoes;
 
+import java.util.Locale;
 import java.util.Scanner;
 
 public class Calculadora {
@@ -10,6 +11,7 @@ public class Calculadora {
         Acoes acoes = new Acoes();
 
         Scanner scanner = new Scanner(System.in);
+        Locale.setDefault(Locale.US);
 
         int opcao = -1;
 
@@ -17,14 +19,15 @@ public class Calculadora {
         while (true) {
 
             System.out.println("Digite uma opção: 1 - Soma, 2 - Subtracao, 3 - Multiplicacao, 4 - Divisao, 5 - Exponencial, 6 - Raiz Quadrada, 7 - Piso, 8 - Teto, 9 - Sair");
-            opcao = scanner.nextInt();
+            opcao = (int) scanner.nextFloat();
 
             if (opcao == 0)
                 break;
             System.out.println("Digite o primeiro numero: ");
-            numeroA = scanner.nextInt();
+            numeroA = scanner.nextFloat();
+
             System.out.println("Digite o segundo numero: ");
-            numeroB = scanner.nextInt();
+            numeroB = scanner.nextFloat();
 
             switch (opcao) {
                 case 1:{
