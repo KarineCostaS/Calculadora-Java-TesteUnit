@@ -29,7 +29,7 @@ public class Acoes {
         if (numeroA >= 0)
             return sqrt(numeroA);
         else {
-            throw new IllegalArgumentException();
+            throw new IllegalArgumentException("é preciso colocar um numero maior que 0");
         }
     }
     public static double piso(double numeroA){
